@@ -1,0 +1,71 @@
+/*logo*/
+.logo-equipo {
+  width: 25px;       /* Ancho pequeño para la tabla */
+  height: 25px;      /* Alto igual para que sea cuadrado */
+  object-fit: contain; /* Evita que la imagen se deforme */
+  vertical-align: middle; /* Alinea la foto con el texto de al lado */
+  margin-right: 10px;    /* Separa la foto del nombre del equipo */
+}
+.logo-equipo-chico {
+    width: 35px;       
+    height: 35px;     
+    object-fit: contain; 
+    vertical-align: middle; 
+    margin-right: 10px;    
+}
+.logo-equipo-sol_america {
+    width: 40px;       
+    height: 40px;      
+    object-fit: contain; 
+    vertical-align: middle;  
+    margin-right: 10px;   
+}
+
+.logo-resultados{
+    width: 15px;
+    height: 15px;
+    object-fit: contain;
+    vertical-align: middle;
+    margin-right: 1px;
+}
+
+/*div*/
+.tablaaa {
+    border: 6px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    display: inline-block; /* Mantiene el borde pegado a la tabla */
+    background-color: white; /* Para que el fondo sea sólido */
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.2)
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;     /* Centra verticalmente */
+    min-height: 100vh;       /* Obliga al body a medir toda la altura de la pantalla */
+    background-color: #f0f0f0; /* Un color de fondo suave ayuda a resaltar la tabla */
+}
+
+/* tabla */
+table {
+    width: 100%; /* Ahora la tabla llena el contenedor que la abraza */
+    border-collapse: collapse;
+    border: none;
+    font-family: Arial, sans-serif;
+}
+
+th, td {
+    padding: 12px 15px; /* Espaciado interno para que no se vea apretado */
+    text-align: left;
+}
+
+/*Color de los fondos*/
+tr.par{
+    background-color: #eaeaea;
+}
+tr.impar{
+    background-color: tomato;
+}
