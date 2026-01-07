@@ -1,0 +1,27 @@
+1. Si se mezclan y reparten cartas al azar: Cuál es la probabilidad de obtener una
+escalera de color?
+La probabilidad es 0,197%
+
+2. Si se mezclan y reparten cartas al azar: ¿Cuál es la probabilidad de obtener un
+poker?
+La probabilidad es 0,024%
+
+3. Si se mezclan y reparten cartas al azar: ¿Cuál es la probabilidad de obtener un full house?
+La probabilidad es 0,144%
+
+4. Si se mezclan y reparten cartas al azar: ¿Cuál es la probabilidad de obtener una escalera?
+La probabilidad es 0,392%
+
+5. Si se mezclan y reparten cartas al azar: ¿Cuál es la probabilidad de obtener un trio?
+La probabilidad es 2,113%
+
+6. Si se mezclan y reparten cartas al azar: ¿Cuál es la probabilidad de obtener un par
+doble?
+La probabilidad es 4,754%
+
+8. Si se mezclan y reparten cartas al azar: ¿Cuál es la probabilidad de obtener un par?
+La probabilidad es 42,257%
+
+9. Si se mezclan y reparten cartas al azar: ¿Cuál es la probabilidad de no obtener
+ninguna de las jugadas anteriores?
+La probabilidad es de 50,119%
