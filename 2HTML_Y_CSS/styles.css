@@ -1,0 +1,52 @@
+body {
+    margin: 15;
+    padding: 10;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+}
+
+
+/*Big Boss*/
+.contenedor {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    border-style: inset;
+    background-color: rgb(255, 255, 255);
+}
+
+/*Diagonal de cuadrados*/
+.cuadrado{
+    width: 200px;
+    height: 200px;
+    position:absolute;
+    z-index: 1;
+    transition: opacity 0.4s ease, transform 0.3s ease;
+}
+.cuadrado:nth-child(1) { top:   0px; left:   0px;}
+.cuadrado:nth-child(2) { top: 100px; left: 100px; }
+.cuadrado:nth-child(3) { top: 200px; left: 200px; }
+.cuadrado:nth-child(4) { top: 300px; left: 300px; }
+.cuadrado:nth-child(5) { top: 400px; left: 400px; }
+
+/*animaciones*/
+/*Levantar cuadrado*/
+.cuadrado:hover {
+    z-index: 10;
+    transform: scale(1.1);
+}
+
+
+/*Resaltar bordes*/
+.cuadrado:hover{
+    border: 5px solid rgba(144, 15, 187, 0.749);
+    box-shadow: 0 0 70px rgb(129, 8, 180);
+}
+
+/*Desaparicion de todo*/
+.cuadrado:hover ~ .cuadrado{
+    opacity: 0%;
+}
