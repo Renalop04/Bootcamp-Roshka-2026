@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TATETI</title>
+        <link rel="stylesheet" href="Pagina_principal_css.css">
+</head>
+<body>
+        <div class="titulo_principal" id="cabecera_titulo"><h1>TATETI ⭕⁣❌</h1></div>
+        <button class="Boton_jugar" id="Bot_jugar"> <h2> Jugar</h2> </button>
+
+        <div id="modo_juego"><h2> Cuantos jugadores: </h2>
+                <button class="Boton_modo" id="un_jugador"> 1 Jugador </button>
+                <button class="Boton_modo" id="dos_jugadores"> 2 Jugadores </button>
+        </div>
+
+        <div id="pantalla_nombres" style="display: none;">
+                <h2 id="titulo_nombres">Ingresa los nombres</h2>
+                <div id="contenedor_input_x">
+                        <label>Jugador X:</label>
+                        <input type="text" id="nombre_X" placeholder="Nombre Jugador: X">
+                </div>
+                
+                <div id="contenedor_input_o">
+                        <label>Jugador Y:</label>
+                        <input type="text" id="nombre_Y" placeholder="Nombre Jugador: Y">
+                </div>
+
+                <button id="btn_comenzar">Empezar Juego</button>
+
+        </div>
+        <div id="juego">
+                <div class="tablero">
+                        <div class="celda" id="celda_0"></div>
+                        <div class="celda" id="celda_1"></div>
+                        <div class="celda" id="celda_2"></div>
+                        <div class="celda" id="celda_3"></div>
+                        <div class="celda" id="celda_4"></div>
+                        <div class="celda" id="celda_5"></div>
+                        <div class="celda" id="celda_6"></div>
+                        <div class="celda" id="celda_7"></div>
+                        <div class="celda" id="celda_8"></div>
+                </div>
+                <div id="resultado_partida"></div>
+        </div>
+        <button id="btn_reiniciar">Reiniciar</button>
+        <button id="menu">Menu</button>
+        <script src="java.js"></script>
+</body>
+</html>

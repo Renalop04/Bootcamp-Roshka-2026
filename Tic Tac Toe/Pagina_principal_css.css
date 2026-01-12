@@ -1,0 +1,181 @@
+/* Cuerpo */
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(imga_tic_tac/tictactoe.png);
+}
+
+/* Titulo */
+.titulo_principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 12px;
+    width: 600px;
+    height: 60px;
+    font-family: Arial, sans-serif;
+    
+    /* Centrado real */
+    position: absolute;
+    top: 250px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Boton jugar */
+.Boton_jugar {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    width: 150px;
+    height: 35px; 
+    font-family: Arial, sans-serif;
+    cursor: pointer; 
+
+    /* Centrado real */
+    position: absolute;
+    top: 330px; 
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Modo de juego */
+#modo_juego {
+    display: none; /* JS lo cambiará a 'flex' */
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: white;
+    border-radius: 12px;
+    width: 500px;
+    height: 100px;
+    font-family: Arial, sans-serif;
+
+    /* Posición (igual que el botón para que aparezca en el mismo lugar) */
+    position: absolute;
+    top: 330px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Botones internos */
+.Boton_modo {
+    background-color: #f0f0f0; 
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/*Nombres de jugadores*/
+#pantalla_nombres {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+#pantalla_nombres div {
+    margin-bottom: 15px;
+}
+
+#pantalla_nombres input {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    display: block;
+    margin: 5px auto;
+}
+
+#btn_comenzar {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+/* Juego tabla */
+#juego {
+    display: none;
+}
+
+.tablero {
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(3, 150px);
+    gap: 1px;
+
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.celda {
+    background-color: white;
+    border: 2px solid rgb(68, 36, 228);
+    font-size: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.celda {
+    /* ... tus otros estilos ... */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/*Resultado*/
+#resultado_partida {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 22px;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+}
+
+/*boton de reiniciar*/
+#btn_reiniciar{
+    display: none;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 12px;
+    font-size: 18px;
+    height: 30px;
+    width: 100px;
+}
+
+/*Menu*/
+/*boton de reiniciar*/
+#menu{
+    display: none;
+    position: absolute;
+    height: 50px;
+    width: 100px;
+    border-radius: 12px;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    top: 85%;
+    left: 50%;
+    transform: translateX(-50%);
+}
